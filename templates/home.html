@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Gestão de Horários</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="{% static 'horarios/home.css' %}">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Bem-vindo à Gestão de Horários</h1>
+        
+        <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-primary" onclick="alert('Cadastro não disponível por enquanto')">Cadastro</button>
+            <button class="btn btn-outline-secondary" onclick="alert('Login não disponível por enquanto')">Login</button>
+            <a href="{% url 'criar_horario' %}" class="btn btn-success">Criar Horário</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
